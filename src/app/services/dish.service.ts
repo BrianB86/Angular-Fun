@@ -8,6 +8,10 @@ import { DISHES } from '../shared/dishes';
 export class DishService {
 
   constructor() { }
+<<<<<<< HEAD
+=======
+
+>>>>>>> eaed39f998eca9aff15a6fe736908079885777b6
     getDishes(): Promise<Dish[]> {
       return Promise.resolve(DISHES);
     }

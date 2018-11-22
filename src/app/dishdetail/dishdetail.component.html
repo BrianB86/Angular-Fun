@@ -1,16 +1,14 @@
-<div class="container"
-    fxLayout="row"
-    fxLayout.sm="column"
-    fxLayout.xs="column"
-    fxLayoutAlign.gt-md="space-around center"
-    fxLayoutGap="10px"
-    fxLayoutGap.xs="0">
+<div class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.gt-md="space-around center" fxLayoutGap="10px" fxLayoutGap.xs="0">
 
   <div fxFlex="40">
     <mat-card *ngIf="dish">
       <mat-card-header>
         <mat-card-title>
+<<<<<<< HEAD
           <h3 *ngIf= "dish">{{ dish.name | uppercase }}</h3>
+=======
+          <h3 *ngIf="dish">{{ dish.name | uppercase }}</h3>
+>>>>>>> eaed39f998eca9aff15a6fe736908079885777b6
         </mat-card-title>
       </mat-card-header>
       <img mat-card-image src={{dish.image}} alt={{dish.name}}>
