@@ -38,6 +38,7 @@ import { LoginComponent } from './login/login.component';
 import { baseURL } from './shared/baseurl';
 
 import 'hammerjs';
+import { HighlightDirective } from './directives/highlight.directive';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import 'hammerjs';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
