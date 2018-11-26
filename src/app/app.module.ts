@@ -20,6 +20,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSliderModule } from '@angular/material/slider';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -74,7 +75,8 @@ import 'hammerjs';
     HttpModule,
     HttpClientModule
   ],
-  providers: [ DishService, PromotionService, LeaderService, { provide: 'BaseURL', useValue: baseURL } ],
+  providers: [ DishService, PromotionService, LeaderService, ProcessHTTPMsgService,
+    { provide: 'BaseURL', useValue: baseURL } ],
   entryComponents: [
     LoginComponent
   ],
